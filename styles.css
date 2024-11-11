@@ -1,0 +1,124 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+/* Contact form container */
+.contact-form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e88e5;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+    outline: none;
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e88e5;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback message styling */
+#feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1e88e5;
+    transition: color 0.3s ease;
+}
+
+/* Error feedback */
+#feedback.error {
+    color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
